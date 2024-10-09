@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #antigen bundle zsh-users/zsh-completions
-alias sysupdate='topgrade'
+alias sys.up='topgrade'
 alias yabai.up='/users/maxgreene/.config/yabai/./update.sh'
 
 export PATH=$PATH:/Users/maxgreene/.spicetify
