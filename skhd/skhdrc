@@ -1,0 +1,27 @@
+# Quick Launch Applications
+cmd + shift - b : open -n -a "Firefox"
+cmd + shift - x : open -n -a "Alacritty"
+cmd + shift - c : open -a "Finder"
+cmd + shift - z : open -a "Zed Preview"
+cmd + shift - space : open -a "Launchpad"
+cmd + shift - v : open -n -a "Spotify"
+
+# Move the focused window to space 1-9
+cmd + shift - 1 : yabai -m window --space 1
+cmd + shift - 2 : yabai -m window --space 2
+cmd + shift - 3 : yabai -m window --space 3
+cmd + shift - 4 : yabai -m window --space 4
+cmd + shift - 5 : yabai -m window --space 5
+cmd + shift - 6 : yabai -m window --space 6
+cmd + shift - 7 : yabai -m window --space 7
+cmd + shift - 8 : yabai -m window --space 8
+cmd + shift - 9 : yabai -m window --space 9
+
+#Swap focused window with the previous window
+cmd + shift - return : yabai -m window --swap next
+
+# Shrink window width by 10 points
+cmd + shift - left  : yabai -m window --resize right:-25:0
+cmd + shift - right : yabai -m window --resize right:25:0
+cmd + shift - up    : yabai -m window --resize bottom:0:-25
+cmd + shift - down  : yabai -m window --resize bottom:0:25
