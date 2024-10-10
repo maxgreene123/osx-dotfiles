@@ -112,5 +112,5 @@ source $ZSH/oh-my-zsh.sh
 #antigen bundle zsh-users/zsh-completions
 alias sys.up='topgrade'
 alias yabai.up='/users/maxgreene/.config/yabai/./update.sh'
-
+eval $(thefuck --alias)
 export PATH=$PATH:/Users/maxgreene/.spicetify
