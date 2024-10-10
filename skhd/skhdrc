@@ -1,7 +1,7 @@
 # Quick Launch Applications
 cmd + shift - b : open -n -a "Firefox"
 cmd + shift - x : open -n -a "Alacritty"
-cmd + shift - c : open -a "Finder"
+cmd + shift - c : osascript -e 'tell application "Finder" to make new Finder window to POSIX file "/users/maxgreene"'
 cmd + shift - z : open -a "Zed Preview"
 cmd + shift - space : open -a "Launchpad"
 cmd + shift - v : open -n -a "Spotify"
