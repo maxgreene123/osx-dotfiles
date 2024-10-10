@@ -31,3 +31,10 @@ cmd + shift - w : yabai -m window --warp north
 cmd + shift - d : yabai -m window --warp east
 cmd + shift - s : yabai -m window --warp south
 cmd + shift - a : yabai -m window --warp west
+
+# close Finder window with Cmd +Shift + Q 
+cmd +shift - q : if [[ "$(osascript -e 'tell application "System Events" to get the name of the first process whose frontmost is true')" == "Finder" ]]; then \
+                osascript -e 'tell application "Finder" to close the front Finder window'; \
+            else \
+                open -n "/System/Applications/Finder.app"; \
+            fi
