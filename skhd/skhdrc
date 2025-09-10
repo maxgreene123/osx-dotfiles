@@ -1,38 +1,12 @@
 # Quick Launch Applications
-cmd + shift - b : open -n -a "Firefox"
+cmd + shift - b : open -n -a "Brave Browser"
 cmd + shift - x : open -n -a "Alacritty"
 cmd + shift - c : osascript -e 'tell application "Finder" to make new Finder window to POSIX file "/users/maxgreene"'
-cmd + shift - z : open -a "Zed Preview"
+cmd + shift - z : open -a "Zed"
 cmd + shift - space : open -a "Launchpad"
 cmd + shift - v : open -n -a "Spotify"
 
-# Move the focused window to space 1-9
-cmd + shift - 1 : yabai -m window --space 1
-cmd + shift - 2 : yabai -m window --space 2
-cmd + shift - 3 : yabai -m window --space 3
-cmd + shift - 4 : yabai -m window --space 4
-cmd + shift - 5 : yabai -m window --space 5
-cmd + shift - 6 : yabai -m window --space 6
-cmd + shift - 7 : yabai -m window --space 7
-cmd + shift - 8 : yabai -m window --space 8
-cmd + shift - 9 : yabai -m window --space 9
-
-#Swap focused window with the previous window
-cmd + shift - return : yabai -m window --swap next
-
-# Shrink window width by 10 points
-cmd + shift - left  : yabai -m window --resize right:-25:0
-cmd + shift - right : yabai -m window --resize right:25:0
-cmd + shift - up    : yabai -m window --resize bottom:0:-25
-cmd + shift - down  : yabai -m window --resize bottom:0:25
-
-# Move the focused window north, east, south, or west
-cmd + shift - w : yabai -m window --warp north
-cmd + shift - d : yabai -m window --warp east
-cmd + shift - s : yabai -m window --warp south
-cmd + shift - a : yabai -m window --warp west
-
-# close Finder window with Cmd +Shift + Q 
+# close Finder window with Cmd +Shift + Q
 cmd +shift - q : if [[ "$(osascript -e 'tell application "System Events" to get the name of the first process whose frontmost is true')" == "Finder" ]]; then \
                 osascript -e 'tell application "Finder" to close the front Finder window'; \
             else \

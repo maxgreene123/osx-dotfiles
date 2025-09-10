@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-#zinit light zsh-users/zsh-completions
+setopt NO_HUP NO_NOTIFY
+unsetopt BG_NICE
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -15,12 +17,7 @@ ZSH_THEME="robbyrussell"
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-    if type brew &>/dev/null; then
-     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-     autoload -Uz compinit
-     compinit
-    fi
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -76,9 +73,11 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    git
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -109,8 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#antigen bundle zsh-users/zsh-completions
-alias sys.up='topgrade'
-alias yabai.up='/users/maxgreene/.config/yabai/./update.sh'
-eval $(thefuck --alias)
-export PATH=$PATH:/Users/maxgreene/.spicetify
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
