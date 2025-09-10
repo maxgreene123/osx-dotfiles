@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadDisplayName</key>
+  <string>Brave Policies</string>
+  <key>PayloadDescription</key>
+  <string>Brave Browser system-level policies</string>
+  <key>PayloadIdentifier</key>
+  <string>com.brave.Browser</string>
+  <key>PayloadOrganization</key>
+  <string></string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadScope</key>
+  <string>System</string>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>e143b891-3398-48f9-bee1-54d3b6db44b3</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.brave.Browser</string>
+      <key>PayloadIdentifier</key>
+      <string>com.brave.Browser</string>
+      <key>PayloadUUID</key>
+      <string>88032831-5301-41ad-8231-10efa9d67ab3</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadDisplayName</key>
+      <string>Brave Policies</string>
+
+      <key>PayloadContent</key>
+      <dict>
+        <key>AlternateErrorPagesEnabled</key><false/>
+        <key>AutofillCreditCardEnabled</key><false/>
+        <key>BackgroundModeEnabled</key><false/>
+        <key>BraveAIChatEnabled</key><false/>
+        <key>BraveNewsDisabled</key><true/>
+        <key>BraveP3AEnabled</key><false/>
+        <key>BraveRewardsDisabled</key><true/>
+        <key>BraveSpeedreaderEnabled</key><false/>
+        <key>BraveStatsPingEnabled</key><false/>
+        <key>BraveSyncUrl</key><string></string>
+        <key>BraveTalkDisabled</key><true/>
+        <key>BraveVPNDisabled</key><true/>
+        <key>BraveWalletDisabled</key><true/>
+        <key>BraveWaybackMachineEnabled</key><false/>
+        <key>BraveWebDiscoveryEnabled</key><false/>
+        <key>BrowserGuestModeEnabled</key><false/>
+        <key>BrowserSignin</key><integer>0</integer>
+        <key>BuiltInDnsClientEnabled</key><false/>
+        <key>CloudReportingEnabled</key><false/>
+        <key>DefaultBrowserSettingEnabled</key><false/>
+        <key>DefaultGeolocationSetting</key><integer>2</integer>
+        <key>DefaultLocalFontsSetting</key><integer>2</integer>
+        <key>DefaultNotificationsSetting</key><integer>2</integer>
+        <key>DefaultSensorsSetting</key><integer>2</integer>
+        <key>DefaultSerialGuardSetting</key><integer>2</integer>
+        <key>DeviceActivityHeartbeatEnabled</key><false/>
+        <key>DeviceMetricsReportingEnabled</key><false/>
+        <key>DriveDisabled</key><true/>
+        <key>ExtensionInstallForcelist</key>
+        <array>
+          <string>cjpalhdlnbpafiamejdnhcphjbkeiagm</string>
+          <string>nkgllhigpcljnhoakjkgaieabnkmgdkb</string>
+          <string>njdfdhgcmkocbgbhcioffdbicglldapd</string>
+          <string>mnjggcdmjocbbbhaepdhchncahnbgone</string>
+          <string>bbeaicapbccfllodepmimpkgecanonai</string>
+          <string>jaadjnlkjnhohljficgoddcjmndjfdmi</string>
+          <string>nngceckbapebfimnlniiiahkandclblb</string>
+          <string>lcbjdhceifofjlpecfpeimnnphbcjgnc</string>
+          <string>eecfoibnnhheckhfokpihgefmlnenofb</string>
+          <string>lckanjgmijmafbedllaakclkaicjfmnk</string>
+          <string>hkgfoiooedgoejojocmhlaklaeopbecg</string>
+          <string>hlkenndednhfkekhgcdicdfddnkalmdm</string>
+        </array>
+        <key>ExtensionManifestV2Availability</key><integer>2</integer>
+        <key>HeartbeatEnabled</key><false/>
+        <key>LogUploadEnabled</key><false/>
+        <key>MetricsReportingEnabled</key><false/>
+        <key>ParcelTrackingEnabled</key><false/>
+        <key>PasswordLeakDetectionEnabled</key><false/>
+        <key>PasswordManagerEnabled</key><false/>
+        <key>PasswordSharingEnabled</key><false/>
+        <key>QuickAnswersEnabled</key><false/>
+        <key>RelatedWebsiteSetsEnabled</key><false/>
+        <key>ReportAppInventory</key><array><string></string></array>
+        <key>ReportDeviceActivityTimes</key><false/>
+        <key>ReportDeviceAppInfo</key><false/>
+        <key>ReportDeviceSystemInfo</key><false/>
+        <key>ReportDeviceUsers</key><false/>
+        <key>ReportWebsiteTelemetry</key><array><string></string></array>
+        <key>SafeBrowsingDeepScanningEnabled</key><false/>
+        <key>SafeBrowsingExtendedReportingEnabled</key><false/>
+        <key>SafeBrowsingSurveysEnabled</key><false/>
+        <key>ShoppingListEnabled</key><false/>
+        <key>SyncDisabled</key><true/>
+        <key>TorDisabled</key><true/>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>
+
