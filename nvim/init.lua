@@ -30,7 +30,6 @@ require("lazy").setup({
         end,
     },
 
-
     -- Autocomplete core + sources
     {
         "hrsh7th/nvim-cmp",
@@ -52,6 +51,12 @@ require("lazy").setup({
             require("nvim-tree").setup()
             vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { silent = true, desc = "File tree" })
         end,
+    },
+
+    -- GitHub Copilot
+    {
+        "github/copilot.vim",
+        event = "InsertEnter", -- load when entering insert mode
     },
 })
 
@@ -84,12 +89,10 @@ cmp.setup({
 })
 
 -- === nvim-cmp for command-line ===
--- ":" completion (commands + paths)
 cmp.setup.cmdline(":", {
     mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
 })
--- "/" or "?" search completion (from current buffer)
 cmp.setup.cmdline({ "/", "?" }, {
     mapping = cmp.mapping.preset.cmdline(),
     sources = { { name = "buffer" } },
